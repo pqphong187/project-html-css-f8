@@ -1,0 +1,40 @@
+button {
+  cursor: pointer;
+}
+
+.btn {
+  color: $grey15;
+  font-size: $fs-btn;
+  line-height: $lh;
+  border-radius: $br-btn;
+}
+
+.btn--s {
+  padding: 14px 16px;
+}
+
+.btn--m {
+  padding: 14px 20px;
+}
+
+.btn--l {
+  padding: 12px 24px;
+}
+
+.btn--xl {
+  padding: 14px 24px;
+}
+
+.btn--xxl {
+  padding: 18px 24px;
+}
+
+.btn--bg-primary {
+  background-color: $orange50;
+  color: $absoluteWhite;
+}
+
+.btn--bg-secondary {
+  background-color: $white97;
+  color: $grey15;
+}

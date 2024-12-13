@@ -1,0 +1,233 @@
+.main-courses {
+  .courses-details {
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      margin-top: 50px;
+    }
+    @media screen and (max-width: 575.98px) {
+      margin-top: 50px;
+    }
+  }
+
+  .courses-item {
+    background-color: $absoluteWhite;
+    border-radius: 12px;
+    @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+      padding: 35px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 991.98px) {
+      padding: 30px;
+    }
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      padding: 24px;
+    }
+    @media screen and (max-width: 575.98px) {
+      padding: 24px;
+    }
+  }
+
+  .courses__header {
+    gap: 50px;
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      display: block;
+    }
+    @media screen and (max-width: 575.98px) {
+      display: block;
+    }
+  }
+
+  .courses__content {
+    flex: 1;
+  }
+
+  .courses__title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: $lh;
+    color: $grey15;
+    @media screen and (max-width: 575.98px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .courses__desc {
+    margin-top: 6px;
+    font-size: 1.6rem;
+    line-height: $lh;
+    color: $grey35;
+    @media screen and (max-width: 575.98px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .btn__courses {
+    border: 1px solid $white95;
+    background-color: $white99;
+    font-weight: 500;
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 575.98px) {
+      margin-top: 20px;
+    }
+  }
+
+  .courses__images {
+    margin-top: 24px;
+    gap: 20px;
+    @media screen and (max-width: 575.98px) {
+      gap: 10px;
+    }
+    a {
+      flex: 1;
+    }
+    img {
+      border-radius: 6px;
+      width: 100%;
+      max-height: 100%;
+      height: 326px;
+      max-width: 100%;
+      object-fit: cover;
+      @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+        height: 250px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 991.98px) {
+        height: 200px;
+      }
+      @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        height: 150px;
+      }
+      @media screen and (max-width: 575.98px) {
+        height: 100px;
+      }
+    }
+  }
+
+  .courses__info {
+    margin-top: 24px;
+    @media screen and (max-width: 575.98px) {
+      display: block;
+    }
+    span {
+      display: inline-block;
+      margin-right: 8px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid $white95;
+      background-color: $absoluteWhite;
+      font-size: 1.6rem;
+      color: $grey35;
+      @media screen and (max-width: 575.98px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    .info-name {
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: $grey15;
+      @media screen and (max-width: 575.98px) {
+        margin-top: 16px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .courses-curriculum {
+    border: 1px solid $white95;
+    border-radius: 10px;
+
+    .curriculum__title {
+      padding: 20px 24px;
+      color: $grey15;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: $lh;
+      border-bottom: 1px solid $white95;
+      @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+        padding: 18px 24px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 991.98px) {
+        padding: 16px 22px;
+      }
+      @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        padding: 14px 20px;
+        font-size: 1.6rem;
+      }
+      @media screen and (max-width: 575.98px) {
+        padding: 14px 20px;
+        font-size: 1.6rem;
+      }
+    }
+
+    .curriculum-list {
+      gap: 80px;
+      padding: 24px 40px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+        padding: 24px 30px;
+        gap: 65px;
+        overflow: hidden;
+      }
+      @media screen and (min-width: 768px) and (max-width: 991.98px) {
+        padding: 24px 30px;
+        overflow: hidden;
+        gap: 100px;
+        row-gap: 40px;
+      }
+      @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        padding: 24px;
+        overflow: hidden;
+        row-gap: 40px;
+      }
+      @media screen and (max-width: 575.98px) {
+        padding: 24px;
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+
+    .curriculum-item {
+      padding: 0px 40px;
+      margin: 0px -40px;
+      flex: 1;
+      @media screen and (max-width: 575.98px) {
+        padding: 20px 0;
+        margin: -20px 0;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid $white95;
+        @media screen and (max-width: 575.98px) {
+          border-bottom: 1px solid $white95;
+          border-right: none;
+        }
+      }
+      span {
+        color: $grey15;
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: $lh;
+        @media screen and (max-width: 575.98px) {
+          font-size: 3rem;
+        }
+      }
+      p {
+        font-size: 1.6rem;
+        color: $grey20;
+        font-weight: 500;
+        line-height: $lh;
+        @media screen and (max-width: 575.98px) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  .mt-40 {
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 575.98px) {
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,156 @@
+.header {
+  background-color: $white97;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+
+  .header-top {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 1400px;
+    background-color: $orange50;
+    border-radius: 6px;
+    @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+      max-width: 1200px;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+      max-width: 992px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991.98px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      max-width: 576px;
+    }
+    @media screen and (max-width: 575.98px) {
+      max-width: calc(100% - 32px);
+    }
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .header-banner {
+    padding: 10px 0;
+    justify-content: center;
+    gap: 23px;
+    @media screen and (max-width: 575.98px) {
+      gap: 5px;
+    }
+  }
+
+  .banner__text {
+    color: $absoluteWhite;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: $lh;
+  }
+
+  .navbar {
+    padding: 16px 60px 20px;
+    border-bottom: 1px solid $white95;
+    @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+      padding: 16px 30px 20px;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+      padding: 16px 16px 20px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 991.98px) {
+      padding: 16px 16px 20px;
+    }
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      padding: 16px 16px 20px;
+    }
+    @media screen and (max-width: 575.98px) {
+      padding: 16px 16px 20px;
+      width: 100%;
+    }
+
+    .container {
+      @media screen and (max-width: 575.98px) {
+        max-width: 100%;
+      }
+    }
+    img {
+      margin-right: 42px;
+      @media screen and (max-width: 575.98px) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .navbar-list {
+    gap: 6px;
+
+    @media screen and (min-width: 768px) and (max-width: 991.98px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 575.98px) {
+      display: none;
+    }
+
+    .nav--active {
+      border-radius: 6px;
+      padding: 12px 20px;
+      background-color: $white95;
+      margin: 0 8px;
+    }
+  }
+
+  .navbar-item {
+    &:hover {
+      cursor: pointer;
+      // background-color: $white95;
+    }
+  }
+
+  .navbar-link {
+    padding: 12px 10px;
+    color: $grey15;
+    line-height: $lh;
+    font-size: 1.4rem;
+  }
+
+  .navbar-btn-group {
+    margin-left: auto;
+  }
+
+  .btn--sign-up {
+    background-color: transparent;
+  }
+
+  .btn__hamber {
+    display: none;
+    background-color: transparent;
+    margin-left: 20px;
+    @media screen and (min-width: 768px) and (max-width: 991.98px) {
+      display: block;
+    }
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      display: block;
+    }
+    @media screen and (max-width: 575.98px) {
+      display: block;
+    }
+    img {
+      margin-right: 0;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .p-l-8 {
+    padding-left: 8px;
+  }
+}

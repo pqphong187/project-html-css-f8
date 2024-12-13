@@ -1,0 +1,131 @@
+.footer {
+  background-color: $absoluteWhite;
+  margin-top: 100px;
+  padding: 60px 0 20px 0;
+  @media screen and (min-width: 768px) and (max-width: 991.98px) {
+    margin-top: 70px;
+  }
+  @media screen and (min-width: 576px) and (max-width: 767.98px) {
+    margin-top: 50px;
+  }
+  @media screen and (max-width: 575.98px) {
+    margin-top: 50px;
+  }
+  .container {
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+    @media screen and (max-width: 575.98px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  .footer-contact {
+    flex: 1 0 auto;
+  }
+
+  .contact-list {
+    margin-top: 30px;
+  }
+
+  .contact-item {
+    gap: 4px;
+    &:not(:first-child) {
+      margin-top: 14px;
+    }
+
+    a {
+      color: $grey15;
+      font-size: 1.6rem;
+      line-height: $lh;
+      @media screen and (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        font-size: 1.5rem;
+      }
+      @media screen and (max-width: 575.98px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .footer-info {
+    flex: 1 0 auto;
+    gap: 24px;
+    margin-left: auto;
+    @media screen and (min-width: 768px) and (max-width: 991.98px) {
+      gap: 0;
+    }
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      margin-left: 0;
+    }
+    @media screen and (max-width: 575.98px) {
+      margin-left: 0;
+      flex-wrap: wrap;
+    }
+  }
+
+  .info {
+    flex: 1;
+  }
+
+  .info-title {
+    color: $grey15;
+    font-weight: 600;
+    line-height: $lh;
+    font-size: 1.8rem;
+  }
+
+  .info-item {
+    a {
+      color: $grey35;
+      font-size: 1.6rem;
+      line-height: $lh;
+      @media screen and (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 1.4rem;
+      }
+      @media screen and (min-width: 576px) and (max-width: 767.98px) {
+        font-size: 1.4rem;
+      }
+      @media screen and (max-width: 575.98px) {
+        font-size: 1.4rem;
+      }
+    }
+    &:not(:first-child) {
+      margin-top: 8px;
+    }
+
+    &:first-child {
+      margin-top: 10px;
+    }
+  }
+
+  .info-list__social {
+    gap: 14px;
+    margin-top: 14px;
+    .info-item {
+      margin: 0;
+    }
+    a {
+      display: inline-block;
+      padding: 12px;
+      font-size: 0;
+      line-height: 0;
+      border-radius: 6px;
+      background-color: $white97;
+    }
+  }
+
+  .copyright {
+    margin-top: 30px;
+    padding-top: 30px;
+    font-size: 1.4rem;
+    line-height: $lh;
+    color: $grey40;
+    text-align: center;
+    border-top: 1px solid $white95;
+  }
+}
