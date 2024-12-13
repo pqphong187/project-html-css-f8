@@ -2,7 +2,13 @@
   .plan {
     padding: 20px 0;
     @media screen and (min-width: 768px) and (max-width: 991.98px) {
-      margin-top: 20px;
+      margin-top: 40px;
+    }
+    @media screen and (min-width: 576px) and (max-width: 767.98px) {
+      margin-top: 10px;
+    }
+    @media screen and (max-width: 575.98px) {
+      margin-top: 10px;
     }
   }
 
