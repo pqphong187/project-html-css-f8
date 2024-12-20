@@ -7,6 +7,10 @@ button {
   font-size: $fs-btn;
   line-height: $lh;
   border-radius: $br-btn;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btn--s {

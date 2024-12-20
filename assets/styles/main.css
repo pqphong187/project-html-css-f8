@@ -156,12 +156,20 @@ br: border-radius
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 
 body {
   background-color: #f7f7f8;
   font-size: 1.6rem;
   font-family: "Be Vietnam Pro", sans-serif;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 button,
@@ -254,6 +262,14 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 button {
   cursor: pointer;
 }
@@ -263,6 +279,9 @@ button {
   font-size: 1.4rem;
   line-height: 1.5;
   border-radius: 6px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .btn--s {
@@ -651,6 +670,9 @@ button {
     6. >=1400px => .col-xxl-{number} (extra extra large)
     */
 .header {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   background-color: #f7f7f8;
   position: sticky;
   top: 0px;
@@ -752,6 +774,57 @@ button {
     margin-right: 0;
   }
 }
+.header .nav__overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  animation: fadeIn linear 0.2s;
+}
+.header .nav__input:checked ~ .nav__overlay {
+  display: block;
+}
+.header .nav__input:checked ~ .nav__mobile {
+  transform: translateX(0);
+  opacity: 1;
+}
+.header .nav__mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 270px;
+  max-width: 100%;
+  background-color: #fff;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all linear 0.2s;
+}
+@media screen and (min-width: 1400px) {
+  .header .nav__mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+  .header .nav__mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .header .nav__mobile {
+    display: none;
+  }
+}
+.header .nav__mobile .nav__mobile-close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  right: 15px;
+}
 .header .navbar-list {
   gap: 6px;
 }
@@ -776,6 +849,10 @@ button {
   background-color: #f1f1f3;
   margin: 0 8px;
 }
+.header .navbar__mobile-list {
+  margin-top: 45px;
+  border-top: 1px solid #f1f1f3;
+}
 .header .navbar-item:hover {
   cursor: pointer;
 }
@@ -785,8 +862,17 @@ button {
   line-height: 1.5;
   font-size: 1.4rem;
 }
+.header .navbar__mobile-link {
+  display: block;
+  padding: 12px 20px;
+  color: #262626;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
 .header .navbar-btn-group {
   margin-left: auto;
+  pointer-events: none;
 }
 .header .btn--sign-up {
   background-color: transparent;
@@ -908,6 +994,9 @@ button {
 }
 
 .footer {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   background-color: #fff;
   margin-top: 100px;
   padding: 60px 0 20px 0;
@@ -1399,6 +1488,10 @@ button {
   background-color: #fcfcfd;
   font-weight: 500;
 }
+.section-benefits .btn__benefit:hover {
+  background-color: #ff9500;
+  color: #fff;
+}
 @media screen and (max-width: 575.98px) {
   .section-benefits .btn__benefit {
     margin-left: 0;
@@ -1564,6 +1657,10 @@ button {
   background-color: #fcfcfd;
   font-weight: 500;
 }
+.section-courses .btn__course:hover {
+  background-color: #ff9500;
+  color: #fff;
+}
 @media screen and (max-width: 575.98px) {
   .section-courses .btn__course {
     margin-left: 0;
@@ -1661,6 +1758,10 @@ button {
   border: 1px solid #f1f1f3;
   background-color: #f7f7f8;
 }
+.section-courses .btn__link:hover {
+  background-color: #ff9500;
+  color: #fff;
+}
 
 .section-testimonials {
   padding: 20px 0;
@@ -1746,6 +1847,10 @@ button {
   border: 1px solid #f1f1f3;
   background-color: #fcfcfd;
   font-weight: 500;
+}
+.section-testimonials .btn__testimonial-top:hover {
+  background-color: #ff9500;
+  color: #fff;
 }
 @media screen and (max-width: 575.98px) {
   .section-testimonials .btn__testimonial-top {
@@ -1842,6 +1947,10 @@ button {
   font-weight: 500;
   border: 1px solid #f1f1f3;
   background-color: #f7f7f8;
+}
+.section-testimonials .testimonial__read-story .btn__testimonial:hover {
+  background-color: #ff9500;
+  color: #fff;
 }
 
 .section-pricings {
@@ -2517,6 +2626,10 @@ button {
   background-color: #fcfcfd;
   font-weight: 500;
 }
+.main-courses .btn__courses:hover {
+  background-color: #ff9500;
+  color: #fff;
+}
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
   .main-courses .btn__courses {
     margin-top: 20px;
@@ -2884,6 +2997,9 @@ button {
     padding: 30px;
     gap: 40px;
     align-items: flex-start;
+    background-image: url("/assets/img/abstract-des-mobile.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -2892,37 +3008,15 @@ button {
     padding: 30px;
     gap: 40px;
     align-items: flex-start;
+    background-image: url("/assets/img/abstract-des-mobile.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
   }
 }
 .main-about .cta .cta__img {
   position: absolute;
   right: 15%;
   top: -10%;
-}
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
-  .main-about .cta .cta__img {
-    top: 0;
-  }
-}
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
-  .main-about .cta .cta__img {
-    width: 235px;
-    height: 235px;
-    right: -35px;
-    top: 50%;
-    background-image: url("/assets/img/abstract-des-mobile.png");
-    background-repeat: no-repeat;
-  }
-}
-@media screen and (max-width: 575.98px) {
-  .main-about .cta .cta__img {
-    width: 235px;
-    height: 235px;
-    right: -35px;
-    top: 60%;
-    background-image: url("/assets/img/abstract-des-mobile.png");
-    background-repeat: no-repeat;
-  }
 }
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
   .main-about .cta .cta__img img {

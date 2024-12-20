@@ -9,7 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/main.css">
-    <title>Project</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <title>Online Course E-Learning Educational </title>
 </head>
 
 <body>
@@ -42,7 +48,7 @@
                         <a href="./pricing.html" class="navbar-link">Pricing</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">Contact</a>
+                        <a href="./contact.html" class="navbar-link">Contact</a>
                     </li>
                 </ul>
 
@@ -51,9 +57,41 @@
                     <button class="btn btn--l btn--bg-primary">Login</button>
                 </div>
 
-                <button class="btn__hamber">
+                <!-- navbar mobile -->
+                <label for="nav-mobile-input" class="btn__hamber">
                     <img src="./assets/icon/hamber-button.svg" alt="button navbar">
-                </button>
+                </label>
+
+                <input type="checkbox" hidden class="nav__input" id="nav-mobile-input">
+
+                <label for="nav-mobile-input" class="nav__overlay"></label>
+
+                <div class="nav__mobile">
+                    <label for="nav-mobile-input" class="nav__mobile-close">
+                        <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.28033 0.21967C0.987437 -0.0732233 0.512563 -0.0732233 0.21967 0.21967C-0.0732233 0.512563 -0.0732233 0.987437 0.21967 1.28033L3.93934 5L0.21967 8.71967C-0.0732233 9.01256 -0.0732233 9.48744 0.21967 9.78033C0.512563 10.0732 0.987437 10.0732 1.28033 9.78033L5 6.06066L8.71967 9.78033C9.01256 10.0732 9.48744 10.0732 9.78033 9.78033C10.0732 9.48744 10.0732 9.01256 9.78033 8.71967L6.06066 5L9.78033 1.28033C10.0732 0.987437 10.0732 0.512563 9.78033 0.21967C9.48744 -0.0732233 9.01256 -0.0732233 8.71967 0.21967L5 3.93934L1.28033 0.21967Z"
+                                fill="#262626" />
+                        </svg>
+                    </label>
+                    <ul class="navbar__mobile-list">
+                        <li class="navbar__mobile-item ">
+                            <a href="/" class="navbar__mobile-link nav--active ">Home</a>
+                        </li>
+                        <li class="navbar__mobile-item">
+                            <a href="./courses.html" class="navbar__mobile-link">Courses</a>
+                        </li>
+                        <li class="navbar__mobile-item">
+                            <a href="./about.html" class="navbar__mobile-link">About Us</a>
+                        </li>
+                        <li class="navbar__mobile-item">
+                            <a href="./pricing.html" class="navbar__mobile-link">Pricing</a>
+                        </li>
+                        <li class="navbar__mobile-item">
+                            <a href="./contact.html" class="navbar__mobile-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>

@@ -6,12 +6,22 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
 }
 
 body {
   background-color: $white97;
   font-size: 1.6rem;
   font-family: "Be Vietnam Pro", sans-serif;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 button,
@@ -101,5 +111,17 @@ textarea {
 }
 
 :hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

@@ -128,37 +128,25 @@
       padding: 30px;
       gap: 40px;
       align-items: flex-start;
+      background-image: url("/assets/img/abstract-des-mobile.png");
+      background-repeat: no-repeat;
+      background-position: bottom right;
     }
     @media screen and (max-width: 575.98px) {
       flex-direction: column;
       padding: 30px;
       gap: 40px;
       align-items: flex-start;
+      background-image: url("/assets/img/abstract-des-mobile.png");
+      background-repeat: no-repeat;
+      background-position: bottom right;
     }
 
     .cta__img {
       position: absolute;
       right: 15%;
       top: -10%;
-      @media screen and (min-width: 768px) and (max-width: 991.98px) {
-        top: 0;
-      }
-      @media screen and (min-width: 576px) and (max-width: 767.98px) {
-        width: 235px;
-        height: 235px;
-        right: -35px;
-        top: 50%;
-        background-image: url("/assets/img/abstract-des-mobile.png");
-        background-repeat: no-repeat;
-      }
-      @media screen and (max-width: 575.98px) {
-        width: 235px;
-        height: 235px;
-        right: -35px;
-        top: 60%;
-        background-image: url("/assets/img/abstract-des-mobile.png");
-        background-repeat: no-repeat;
-      }
+
       img {
         @media screen and (min-width: 576px) and (max-width: 767.98px) {
           display: none;

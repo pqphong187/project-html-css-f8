@@ -296,6 +296,10 @@
     border: 1px solid $white95;
     background-color: $white99;
     font-weight: 500;
+    &:hover {
+      background-color: $orange50;
+      color: $absoluteWhite;
+    }
     @media screen and (max-width: 575.98px) {
       margin-left: 0;
     }
@@ -434,6 +438,10 @@
     border: 1px solid $white95;
     background-color: $white99;
     font-weight: 500;
+    &:hover {
+      background-color: $orange50;
+      color: $absoluteWhite;
+    }
     @media screen and (max-width: 575.98px) {
       margin-left: 0;
     }
@@ -524,6 +532,10 @@
     color: #262626;
     font-weight: 500;
     line-height: 1.5;
+    &:hover {
+      background-color: $orange50;
+      color: $absoluteWhite;
+    }
 
     border: 1px solid $white95;
     background-color: $white97;
@@ -595,6 +607,10 @@
     border: 1px solid $white95;
     background-color: $white99;
     font-weight: 500;
+    &:hover {
+      background-color: $orange50;
+      color: $absoluteWhite;
+    }
     @media screen and (max-width: 575.98px) {
       margin-left: 0;
     }
@@ -677,6 +693,10 @@
       font-weight: 500;
       border: 1px solid $white95;
       background-color: $white97;
+      &:hover {
+        background-color: $orange50;
+        color: $absoluteWhite;
+      }
     }
   }
 }

@@ -1,4 +1,8 @@
 .header {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   background-color: $white97;
   position: sticky;
   top: 0px;
@@ -85,6 +89,56 @@
     }
   }
 
+  .nav__overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+  }
+
+  .nav__input:checked ~ .nav__overlay {
+    display: block;
+  }
+
+  .nav__input:checked ~ .nav__mobile {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .nav__mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 270px;
+    max-width: 100%;
+    background-color: $absoluteWhite;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+    @media screen and (min-width: 1400px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1399.98px) {
+      display: none;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1199.98px) {
+      display: none;
+    }
+
+    .nav__mobile-close {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 15px;
+      right: 15px;
+    }
+  }
+
   .navbar-list {
     gap: 6px;
 
@@ -108,6 +162,11 @@
     }
   }
 
+  .navbar__mobile-list {
+    margin-top: 45px;
+    border-top: 1px solid $white95;
+  }
+
   .navbar-item {
     &:hover {
       cursor: pointer;
@@ -122,8 +181,18 @@
     font-size: 1.4rem;
   }
 
+  .navbar__mobile-link {
+    display: block;
+    padding: 12px 20px;
+    color: $grey15;
+    line-height: $lh;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
   .navbar-btn-group {
     margin-left: auto;
+    pointer-events: none;
   }
 
   .btn--sign-up {
